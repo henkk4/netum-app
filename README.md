@@ -9,5 +9,5 @@ in the project folder run: npm start
 In the app, it is possible to:
 - Add new person (first name, last name, age) to table
 - Delete person from table
-- Edit persons information
+- Edit person's information
 - Sort table by any column
