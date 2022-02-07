@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  color: rgb(41, 168, 41);
+}
+
+/*Form style*/
+#person-form {
+  background-color: lightgray;
+  width: 300px;
+  margin: auto;
+}
+#lastname, #firstname, #age {
+  margin: 10px;
+  color: black;
+}
+
+/*Button styles*/
+#sort-button, #discard-button, #edit-button, #confirm-button, #submit-button, #delete-button {
+  width: 75px;
+  margin: 10px;
+}
+#edit-button, #confirm-button, #submit-button, #delete-button {
+  background-color: forestgreen;
+  color: white;
+  border-style: hidden;
+  padding: 3px;
+}
+#delete-button {
+  background-color: red;
+}
+#submit-button {
+  margin: 10px;
+  width: 250px;
+}
+
+/*Table styles*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+  border-style: groove;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-style: groove;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
