@@ -49,15 +49,15 @@ export const PersonsArray = ({persons, deletePerson, editPerson}: ArrayProps): J
   const sortAge = () => {
     if(ageSort == "UP") {
       persons.sort((a, b): number => {
-        return a.age.toLowerCase() !== b.age.toLowerCase() ? 
-          (a.age.toLowerCase() > b.age.toLowerCase() ? 1 : -1) : 0;
+        return parseInt(a.age) !== parseInt(b.age) ? 
+          (parseInt(a.age) > parseInt(b.age) ? 1 : -1) : 0;
       });
       setAgeSort("DOWN");
     }
     else {
       persons.sort((a, b): number => {
-        return a.age.toLowerCase() !== b.age.toLowerCase() ? 
-          (a.age.toLowerCase() < b.age.toLowerCase() ? 1 : -1) : 0;
+        return parseInt(a.age) !== parseInt(b.age) ? 
+          (parseInt(a.age) < parseInt(b.age) ? 1 : -1) : 0;
       });
       setAgeSort("UP");
     }
